@@ -53,7 +53,10 @@ function onSelectBreed(evt) {
 
         const catByBreedMarkup = createCatByBreedMarkup(catInfoObj);
         catInfoEl.innerHTML = catByBreedMarkup;
-    }).catch(onFetchError);
+    }).catch((error) => {
+        catInfoEl.classList.add('is-hidden');
+        errorTextEl.classList.remove('is-hidden');
+    });
 }
 
 function createCatByBreedMarkup(obj) {

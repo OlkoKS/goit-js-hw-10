@@ -10,6 +10,12 @@ p, h1, h2, h3 {
     display: none;
 }
 
+.error {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+}
 .cat-info {
     display: flex;
     gap: 20px;
